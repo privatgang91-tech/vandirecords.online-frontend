@@ -1,7 +1,7 @@
 import React from "react";
 import vandiTag from "../assets/vandi-tag.png";
 import reapxLogo from "../assets/reapxlogo.png";
-import "../styles/Home.css";
+import "../styles/home.css";
 
 export default function Home() {
 return (
