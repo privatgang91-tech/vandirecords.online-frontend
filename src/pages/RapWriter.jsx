@@ -1,6 +1,6 @@
 // src/pages/RapWriter.jsx
 import React, { useState } from "react";
-import "../styles/therap.css";
+import "../styles/rapwriter.css";
 
 // 🔌 URL de l’API backend
 // En local : backend sur http://localhost:3001
