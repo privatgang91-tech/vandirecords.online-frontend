@@ -16,7 +16,7 @@ import "./styles/global.css";
 import "./styles/header.css";
 import "./styles/home.css";
 import "./styles/vandi.css";
-import "./styles/reapx.css";
+import "./styles/reap.css";
 import "./styles/rapwriter.css";
 
 export default function App() {
