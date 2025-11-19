@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Reapx.css";
+import "../styles/reap.css";
 
 export default function Reapx() {
 return (
