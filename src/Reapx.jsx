@@ -1,6 +1,6 @@
 // src/pages/Reapx.jsx
 import React from "react";
-import "../styles/reapx.css";
+import "../styles/reap.css";
 
 export default function Reapx() {
 return (
