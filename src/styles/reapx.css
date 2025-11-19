@@ -1,0 +1,43 @@
+.reapx-page {
+text-align: center;
+}
+
+.reapx-title {
+font-size: 2.4rem;
+color: var(--neon);
+letter-spacing: 2px;
+margin-bottom: 6px;
+}
+
+.reapx-subtitle {
+color: var(--muted);
+margin-bottom: 30px;
+}
+
+.reapx-grid {
+display: grid;
+gap: 24px;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.reapx-card {
+background: var(--card-bg);
+border: 1px solid var(--card-border);
+padding: 16px;
+border-radius: 12px;
+}
+
+.reapx-cover.placeholder {
+height: 150px;
+border-radius: 10px;
+border: 1px dashed rgba(0, 255, 156, 0.4);
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--muted);
+margin-bottom: 10px;
+}
+
+.reapx-card-title {
+font-weight: 600;
+}

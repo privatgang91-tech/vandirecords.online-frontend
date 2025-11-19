@@ -1,0 +1,43 @@
+.vandi-page {
+text-align: center;
+}
+
+.section-title {
+font-size: 2.2rem;
+color: var(--neon);
+margin-bottom: 8px;
+}
+
+.section-subtitle {
+color: var(--muted);
+margin-bottom: 30px;
+}
+
+.release-grid {
+display: grid;
+gap: 24px;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.release-card {
+background: var(--card-bg);
+border-radius: 12px;
+border: 1px solid var(--card-border);
+padding: 16px;
+}
+
+.release-cover.placeholder {
+height: 150px;
+border-radius: 10px;
+border: 1px dashed rgba(0, 255, 156, 0.4);
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--muted);
+margin-bottom: 10px;
+}
+
+.release-title {
+font-weight: 600;
+margin-bottom: 6px;
+}

@@ -1,0 +1,42 @@
+/* === GLOBAL RESET === */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background: radial-gradient(circle at top, #08080b, #000);
+color: #d5ffe8;
+font-family: "Inter", sans-serif;
+min-height: 100vh;
+overflow-x: hidden;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+transition: 0.2s ease;
+}
+
+.page-container {
+max-width: 1300px;
+margin: 0 auto;
+padding: 40px 20px;
+}
+
+h1, h2, h3 {
+letter-spacing: 1px;
+text-shadow: 0 0 12px rgba(0, 255, 170, 0.5);
+}
+
+button {
+cursor: pointer;
+}
+
+/* Glitch green color */
+:root {
+--neon: #05ffb0;
+--neon-soft: rgba(5, 255, 176, 0.6);
+--neon-border: rgba(5, 255, 176, 0.4);
+}

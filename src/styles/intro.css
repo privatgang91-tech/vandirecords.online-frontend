@@ -1,0 +1,68 @@
+/* --- CRT Screen Boot --- */
+.intro-crt {
+position: fixed;
+inset: 0;
+background: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 999;
+overflow: hidden;
+animation: crt-start 0.3s ease-out;
+transition: opacity 1s ease-out;
+}
+
+.intro-crt.fade-out {
+opacity: 0;
+pointer-events: none;
+}
+
+/* --- Logo RGB Glitch --- */
+.crt-logo {
+width: 240px;
+animation: rgb-glitch 0.5s infinite;
+position: relative;
+z-index: 10;
+filter: drop-shadow(0 0 10px #00ffbf);
+}
+
+/* RGB glitch animation */
+@keyframes rgb-glitch {
+0% { transform: translate(0); }
+20% { transform: translate(-1px, 1px); filter: drop-shadow(0 0 8px #00f) hue-rotate(20deg); }
+40% { transform: translate(1px, -1px); filter: drop-shadow(0 0 8px #0ff) hue-rotate(-20deg); }
+60% { transform: translate(-2px, 2px); }
+80% { transform: translate(2px, -2px); }
+100% { transform: translate(0); }
+}
+
+/* --- Scanlines overlay --- */
+.scanlines {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+pointer-events: none;
+background: repeating-linear-gradient(
+to bottom,
+rgba(255,255,255,0.05) 0px,
+rgba(255,255,255,0.03) 2px,
+transparent 3px,
+transparent 4px
+);
+animation: scan 0.8s linear infinite;
+opacity: 0.4;
+}
+
+@keyframes scan {
+0% { transform: translateY(-5%); }
+100% { transform: translateY(5%); }
+}
+
+/* --- CRT startup flash --- */
+@keyframes crt-start {
+0% { opacity: 0; transform: scale(1.4); filter: brightness(400%); }
+40% { opacity: 1; transform: scale(1); filter: brightness(120%); }
+100% { filter: brightness(100%); }
+}
