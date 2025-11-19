@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Vandi.css"; // Tu peux le créer pour customiser l'apparence
+import "../styles/vandi.css"; // Tu peux le créer pour customiser l'apparence
 
 export default function Vandi() {
 return (
