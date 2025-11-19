@@ -17,7 +17,7 @@ import "./styles/header.css";
 import "./styles/home.css";
 import "./styles/vandi.css";
 import "./styles/reap.css";
-import "./styles/rapwriter.css";
+import "./styles/therap.css";
 
 export default function App() {
 const [showIntro, setShowIntro] = useState(true);
