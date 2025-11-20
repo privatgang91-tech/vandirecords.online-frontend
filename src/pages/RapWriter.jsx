@@ -7,7 +7,7 @@ import "../styles/rapwriter.css";
 // En prod (Render) : tu pourras mettre l’URL Render à la place.
 const API_URL =
 import.meta.env.VITE_RAPWRITER_API ||
-"https://reap-x-backend.onrender.com";
+"https://reap-x-backend.onrender.com/api/generate-lyrics";
 
 export default function RapWriter() {
 const [language, setLanguage] = useState("FR");
